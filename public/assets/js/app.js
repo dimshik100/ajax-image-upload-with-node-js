@@ -76,7 +76,7 @@ function handleSuccess(data) {
 
 // Set the progress bar to 0 when a file(s) is selected.
 $('#photos-input').on('change', function () {
-    $('.progress-bar').width('0%');
+    $progressBar.width('0%');
 });
 
 // On form submit, handle the file uploads.
@@ -90,7 +90,7 @@ $('#upload-photos').on('submit', function (event) {
         formData = new FormData();
 
     if (files.length === 0) {
-        alert('Select atleast 1 file to upload.');
+        alert('Select at least 1 file to upload.');
         return false;
     }
 
